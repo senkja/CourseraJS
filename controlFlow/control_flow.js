@@ -48,3 +48,24 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let organisationRole = "Subscriber";
+let dietMessage = ""
+
+switch (organisationRole) {
+    case "Employee":
+        dietMessage = "You have FULL access to Dietary Service";
+        break;
+    case "Enrolled Membeg":
+        dietMessage = "You have access to Dietary Service, and one-on-one interction to dietician";
+        break;
+    case "Subscriber":
+        dietMessage = "You have partial access to Dietary Service";
+        break;
+    case "Non-Subscriber":
+        dietMessage = "You need to enroll or subscribe to have access to Dietary Service";
+        break;
+}
+
+console.log(dietMessage);
+
